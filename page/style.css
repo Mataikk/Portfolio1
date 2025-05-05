@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body, html {
+    font-family: "Roboto Mono", monospace;
+    background-color: #2c3e50; /* Bleu marine foncé */
+    color: #ecf0f1; /* Gris clair */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Style du header */
+.header {
+    font-family: "Pirata One", system-ui;
+    background-color: #34495e; /* Bleu-gris foncé */
+    font-size: 300%;
+    color: #ecf0f1; /* Gris clair */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style de la navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1abc9c; /* Vert turquoise */
+    color: #ecf0f1; /* Gris clair */
+}
+
+/* Style du texte du nom à gauche */
+.navbar-left {
+    font-family: "Pirata One", system-ui;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+/* Style des éléments de la navbar à droite */
+.navbar-right ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-right ul li {
+    margin-left: 20px;
+}
+
+.navbar-right ul li a {
+    font-family: "Pirata One", system-ui;
+    text-decoration: none;
+    color: #ecf0f1; /* Gris clair */
+    font-size: 30px;
+    margin-right: 60px;
+    transition: color 0.3s ease;
+}
+
+/* Effet de survol sur les liens de la navbar */
+.navbar-right ul li a:hover {
+    color: #e74c3c; /* Rouge vif */
+    text-decoration: underline;
+}
+
+  .home {
+    text-align: center;
+    padding: 180px;
+    background-color: #34495e; /* Bleu-gris foncé */
+    color: #ecf0f1; /* Gris clair */
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    font-family: "Pirata One", sans-serif;
+    margin-top: -20px;
+}
+
+.home p {
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    margin-top: 100px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #ecf0f1; /* Gris clair */
+    background-color: #1abc9c; /* Vert turquoise */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #16a085; /* Vert plus foncé */
+    transform: scale(1.05);
+}
+
+.parcours {
+    text-align: center;
+    padding: 180px;
+    background-color: #2c3e50; /* Bleu-gris foncé */
+    color: #ecf0f1; /* Gris clair */
+}
+
+.parcours h2 {
+    font-size: 36px;
+    font-family: "Pirata One", sans-serif; /* Style du titre */
+    margin-bottom: 20px;
+    color: white; /* Bleu foncé */
+    margin-bottom: 60px;
+}
+
+.parcours p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Roboto Mono", monospace; /* Style de paragraphe */
+    color: white; /* Gris plus doux */
+    margin-bottom: 20px;
+}
+
+.projets {
+    padding: 80px 20px;
+    background-color: #34495e; /* Bleu marine foncé */
+    color: #ecf0f1; /* Gris clair */
+    text-align: center;
+}
+
+.projets h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-family: "Pirata One", sans-serif;
+}
+
+.projet-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projet-item h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: "Pirata One", sans-serif;
+}
+
+.projet-item p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.projet-link {
+    font-size: 18px;
+    color: #1abc9c; /* Vert turquoise */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #1abc9c;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.projet-link:hover {
+    background-color: #1abc9c; /* Vert turquoise */
+    color: #ecf0f1; /* Gris clair */
+}
+
+.certification {
+    background-color: #2c3e50; /* Fond gris clair */
+    color: #2c3e50; /* Texte bleu marine */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.certification h2 {
+    font-family: "Pirata One", sans-serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1abc9c; /* Vert turquoise */
+}
+
+.certification-content {
+    display: flex;
+    justify-content: space-around; /* Espace entre les éléments */
+    flex-wrap: wrap; /* Adaptation sur les petits écrans */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrage du contenu */
+}
+
+.certification-item {
+    background-color: #1abc9c; /* Bleu-gris foncé */
+    color: #ecf0f1; /* Texte clair */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 1 300px; /* Assure que les items prennent au moins 300px de largeur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre sous chaque item */
+}
+
+.certification-item h3 {
+    font-family: "Pirata One", sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white; /* Vert turquoise */
+}
+
+.certification-item p {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.competences {
+    background-color: #34495e; /* Fond gris clair */
+    color: #2c3e50; /* Texte bleu marine */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.competences h2 {
+    font-family: "Pirata One", sans-serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1abc9c; /* Vert turquoise */
+}
+
+.competences-content {
+    display: flex;
+    justify-content: space-around; /* Espace entre les éléments */
+    flex-wrap: wrap; /* Adaptation sur les petits écrans */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrage du contenu */
+}
+
+.competence-item {
+    background-color: #2c3e50; /* Bleu-gris foncé */
+    color: #ecf0f1; /* Texte clair */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 1 300px; /* Assure que les items prennent au moins 300px de largeur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre sous chaque item */
+}
+
+.competence-item h3 {
+    font-family: "Pirata One", sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1abc9c; /* Vert turquoise */
+}
+
+.competence-item p {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.footer {
+    background-color: #2c3e50; /* Bleu marine foncé */
+    color: #ecf0f1; /* Gris clair */
+    padding: 30px 20px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Espace entre les sections */
+    align-items: flex-start; /* Aligner les éléments en haut */
+    flex-wrap: wrap; /* Permettre le wrapping sur petits écrans */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le contenu */
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px; /* Assurer que les sections ne deviennent pas trop petites */
+}
+
+.footer-section h3 {
+    font-family: "Pirata One", sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #1abc9c; /* Vert turquoise */
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-section .social a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* Rendre les icônes blanches */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #95a5a6; /* Gris clair */
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #34495e; /* Légère bordure en haut pour séparation */
+}
+
+
